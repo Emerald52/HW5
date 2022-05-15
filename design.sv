@@ -6,7 +6,7 @@ module PRPG(clk,clr,X);
   assign X=Q[0];
 always@(negedge clk or posedge clr)
   if(clr)begin
-    Q<=3'b110;
+    Q<=3'b1111;
   end
   else begin
     Q[1:0]<=Q[2:1];
